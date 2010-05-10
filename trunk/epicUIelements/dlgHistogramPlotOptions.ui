@@ -1,0 +1,262 @@
+<ui version="4.0" >
+ <class>dlgHistogramPlotOptions</class>
+ <widget class="QDialog" name="dlgHistogramPlotOptions" >
+  <property name="geometry" >
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>315</width>
+    <height>280</height>
+   </rect>
+  </property>
+  <property name="windowTitle" >
+   <string>Histograms</string>
+  </property>
+  <widget class="QDialogButtonBox" name="buttonBox" >
+   <property name="geometry" >
+    <rect>
+     <x>70</x>
+     <y>240</y>
+     <width>231</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="orientation" >
+    <enum>Qt::Horizontal</enum>
+   </property>
+   <property name="standardButtons" >
+    <set>QDialogButtonBox::Cancel|QDialogButtonBox::Ok</set>
+   </property>
+  </widget>
+  <widget class="Line" name="line" >
+   <property name="geometry" >
+    <rect>
+     <x>10</x>
+     <y>30</y>
+     <width>291</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="orientation" >
+    <enum>Qt::Horizontal</enum>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_8" >
+   <property name="geometry" >
+    <rect>
+     <x>10</x>
+     <y>10</y>
+     <width>301</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="font" >
+    <font>
+     <pointsize>10</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="text" >
+    <string>Plot Histograms:</string>
+   </property>
+  </widget>
+  <widget class="QRadioButton" name="mrBtnXCorr" >
+   <property name="geometry" >
+    <rect>
+     <x>20</x>
+     <y>50</y>
+     <width>83</width>
+     <height>18</height>
+    </rect>
+   </property>
+   <property name="text" >
+    <string>XCorr</string>
+   </property>
+   <property name="checked" >
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QRadioButton" name="mrBtnDelCn2" >
+   <property name="geometry" >
+    <rect>
+     <x>20</x>
+     <y>80</y>
+     <width>83</width>
+     <height>18</height>
+    </rect>
+   </property>
+   <property name="text" >
+    <string>DelCn2</string>
+   </property>
+  </widget>
+  <widget class="QRadioButton" name="mrBtnXCorrN" >
+   <property name="geometry" >
+    <rect>
+     <x>20</x>
+     <y>140</y>
+     <width>121</width>
+     <height>18</height>
+    </rect>
+   </property>
+   <property name="text" >
+    <string>XCorr (normalized)</string>
+   </property>
+  </widget>
+  <widget class="QRadioButton" name="mrBtnDelCn2N" >
+   <property name="geometry" >
+    <rect>
+     <x>20</x>
+     <y>170</y>
+     <width>121</width>
+     <height>18</height>
+    </rect>
+   </property>
+   <property name="text" >
+    <string>DelCn2 (normalized)</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_7" >
+   <property name="geometry" >
+    <rect>
+     <x>190</x>
+     <y>90</y>
+     <width>82</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text" >
+    <string>Marker Color:</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_9" >
+   <property name="geometry" >
+    <rect>
+     <x>190</x>
+     <y>170</y>
+     <width>82</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text" >
+    <string>Number of Bins:</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="mlEditBins" >
+   <property name="geometry" >
+    <rect>
+     <x>190</x>
+     <y>190</y>
+     <width>110</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text" >
+    <string>100</string>
+   </property>
+  </widget>
+  <widget class="ColorButton" name="mtoolBtnColor" >
+   <property name="enabled" >
+    <bool>true</bool>
+   </property>
+   <property name="geometry" >
+    <rect>
+     <x>190</x>
+     <y>110</y>
+     <width>111</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="layoutDirection" >
+    <enum>Qt::LeftToRight</enum>
+   </property>
+   <property name="text" >
+    <string>Select Color...</string>
+   </property>
+   <property name="toolButtonStyle" >
+    <enum>Qt::ToolButtonTextBesideIcon</enum>
+   </property>
+  </widget>
+  <widget class="Line" name="line_2" >
+   <property name="geometry" >
+    <rect>
+     <x>10</x>
+     <y>220</y>
+     <width>291</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="orientation" >
+    <enum>Qt::Horizontal</enum>
+   </property>
+  </widget>
+  <widget class="QRadioButton" name="mrBtnSp" >
+   <property name="geometry" >
+    <rect>
+     <x>20</x>
+     <y>110</y>
+     <width>83</width>
+     <height>18</height>
+    </rect>
+   </property>
+   <property name="text" >
+    <string>Sp</string>
+   </property>
+  </widget>
+  <widget class="QRadioButton" name="mrBtnSpN" >
+   <property name="geometry" >
+    <rect>
+     <x>20</x>
+     <y>200</y>
+     <width>101</width>
+     <height>18</height>
+    </rect>
+   </property>
+   <property name="text" >
+    <string>Sp (normalized)</string>
+   </property>
+  </widget>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>ColorButton</class>
+   <extends>QToolButton</extends>
+   <header>colorbutton</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>buttonBox</sender>
+   <signal>accepted()</signal>
+   <receiver>dlgHistogramPlotOptions</receiver>
+   <slot>accept()</slot>
+   <hints>
+    <hint type="sourcelabel" >
+     <x>248</x>
+     <y>254</y>
+    </hint>
+    <hint type="destinationlabel" >
+     <x>157</x>
+     <y>274</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>buttonBox</sender>
+   <signal>rejected()</signal>
+   <receiver>dlgHistogramPlotOptions</receiver>
+   <slot>reject()</slot>
+   <hints>
+    <hint type="sourcelabel" >
+     <x>316</x>
+     <y>260</y>
+    </hint>
+    <hint type="destinationlabel" >
+     <x>286</x>
+     <y>274</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

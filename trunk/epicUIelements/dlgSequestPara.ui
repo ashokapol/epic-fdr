@@ -1,0 +1,373 @@
+<ui version="4.0" >
+ <class>mdlgSequestPara</class>
+ <widget class="QDialog" name="mdlgSequestPara" >
+  <property name="geometry" >
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>468</width>
+    <height>405</height>
+   </rect>
+  </property>
+  <property name="windowTitle" >
+   <string>Sequest</string>
+  </property>
+  <widget class="QDialogButtonBox" name="buttonBox" >
+   <property name="geometry" >
+    <rect>
+     <x>100</x>
+     <y>360</y>
+     <width>341</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="orientation" >
+    <enum>Qt::Horizontal</enum>
+   </property>
+   <property name="standardButtons" >
+    <set>QDialogButtonBox::Cancel|QDialogButtonBox::Ok</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label" >
+   <property name="geometry" >
+    <rect>
+     <x>21</x>
+     <y>20</y>
+     <width>261</width>
+     <height>18</height>
+    </rect>
+   </property>
+   <property name="font" >
+    <font>
+     <pointsize>10</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="text" >
+    <string>Select SEQUEST Parameters :</string>
+   </property>
+  </widget>
+  <widget class="Line" name="line" >
+   <property name="geometry" >
+    <rect>
+     <x>20</x>
+     <y>40</y>
+     <width>431</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="orientation" >
+    <enum>Qt::Horizontal</enum>
+   </property>
+  </widget>
+  <widget class="Line" name="line_2" >
+   <property name="geometry" >
+    <rect>
+     <x>20</x>
+     <y>340</y>
+     <width>431</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="orientation" >
+    <enum>Qt::Horizontal</enum>
+   </property>
+  </widget>
+  <widget class="QGroupBox" name="groupBox" >
+   <property name="geometry" >
+    <rect>
+     <x>20</x>
+     <y>60</y>
+     <width>211</width>
+     <height>201</height>
+    </rect>
+   </property>
+   <property name="title" >
+    <string>Select Charge States</string>
+   </property>
+   <widget class="QCheckBox" name="mchkBoxCS1" >
+    <property name="geometry" >
+     <rect>
+      <x>30</x>
+      <y>20</y>
+      <width>101</width>
+      <height>18</height>
+     </rect>
+    </property>
+    <property name="text" >
+     <string>Charge State 1</string>
+    </property>
+    <property name="checked" >
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="mchkBoxCS3" >
+    <property name="geometry" >
+     <rect>
+      <x>30</x>
+      <y>80</y>
+      <width>101</width>
+      <height>18</height>
+     </rect>
+    </property>
+    <property name="text" >
+     <string>Charge State 3</string>
+    </property>
+    <property name="checked" >
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="mchkBoxCS2" >
+    <property name="geometry" >
+     <rect>
+      <x>30</x>
+      <y>50</y>
+      <width>101</width>
+      <height>18</height>
+     </rect>
+    </property>
+    <property name="text" >
+     <string>Charge State 2</string>
+    </property>
+    <property name="checked" >
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="mchkBoxCSother" >
+    <property name="geometry" >
+     <rect>
+      <x>30</x>
+      <y>170</y>
+      <width>151</width>
+      <height>18</height>
+     </rect>
+    </property>
+    <property name="text" >
+     <string>Charge State 6 and above</string>
+    </property>
+    <property name="checked" >
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="mchkBoxCS4" >
+    <property name="geometry" >
+     <rect>
+      <x>30</x>
+      <y>110</y>
+      <width>101</width>
+      <height>18</height>
+     </rect>
+    </property>
+    <property name="text" >
+     <string>Charge State 4</string>
+    </property>
+    <property name="checked" >
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="mchkBoxCS5" >
+    <property name="geometry" >
+     <rect>
+      <x>30</x>
+      <y>140</y>
+      <width>101</width>
+      <height>18</height>
+     </rect>
+    </property>
+    <property name="text" >
+     <string>Charge State 5</string>
+    </property>
+    <property name="checked" >
+     <bool>false</bool>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QGroupBox" name="groupBox_2" >
+   <property name="geometry" >
+    <rect>
+     <x>240</x>
+     <y>60</y>
+     <width>211</width>
+     <height>201</height>
+    </rect>
+   </property>
+   <property name="title" >
+    <string>Tryptic State</string>
+   </property>
+   <widget class="QCheckBox" name="mchkBoxNone" >
+    <property name="geometry" >
+     <rect>
+      <x>30</x>
+      <y>30</y>
+      <width>71</width>
+      <height>18</height>
+     </rect>
+    </property>
+    <property name="text" >
+     <string>None</string>
+    </property>
+    <property name="checked" >
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="mchkBoxPartial" >
+    <property name="geometry" >
+     <rect>
+      <x>30</x>
+      <y>100</y>
+      <width>71</width>
+      <height>18</height>
+     </rect>
+    </property>
+    <property name="text" >
+     <string>Partial</string>
+    </property>
+    <property name="checked" >
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="mchkBoxFull" >
+    <property name="geometry" >
+     <rect>
+      <x>30</x>
+      <y>170</y>
+      <width>71</width>
+      <height>18</height>
+     </rect>
+    </property>
+    <property name="text" >
+     <string>Full</string>
+    </property>
+    <property name="checked" >
+     <bool>true</bool>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QLabel" name="label_7" >
+   <property name="geometry" >
+    <rect>
+     <x>30</x>
+     <y>270</y>
+     <width>91</width>
+     <height>18</height>
+    </rect>
+   </property>
+   <property name="font" >
+    <font>
+     <pointsize>8</pointsize>
+    </font>
+   </property>
+   <property name="text" >
+    <string>Max XCorr Rank:</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_8" >
+   <property name="geometry" >
+    <rect>
+     <x>240</x>
+     <y>270</y>
+     <width>91</width>
+     <height>18</height>
+    </rect>
+   </property>
+   <property name="font" >
+    <font>
+     <pointsize>8</pointsize>
+    </font>
+   </property>
+   <property name="text" >
+    <string>DelCn2 Threshold:</string>
+   </property>
+  </widget>
+  <widget class="QSpinBox" name="mspinBoxMaxXc" >
+   <property name="geometry" >
+    <rect>
+     <x>130</x>
+     <y>270</y>
+     <width>81</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="minimum" >
+    <number>1</number>
+   </property>
+   <property name="maximum" >
+    <number>10</number>
+   </property>
+   <property name="value" >
+    <number>1</number>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="mlineEditDelCn2threh" >
+   <property name="geometry" >
+    <rect>
+     <x>340</x>
+     <y>270</y>
+     <width>81</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="text" >
+    <string>0.001</string>
+   </property>
+  </widget>
+  <widget class="QFrame" name="frame" >
+   <property name="geometry" >
+    <rect>
+     <x>20</x>
+     <y>300</y>
+     <width>211</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="frameShape" >
+    <enum>QFrame::Box</enum>
+   </property>
+   <property name="frameShadow" >
+    <enum>QFrame::Sunken</enum>
+   </property>
+   <widget class="QCheckBox" name="mchkBoxByPass" >
+    <property name="geometry" >
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>181</width>
+      <height>18</height>
+     </rect>
+    </property>
+    <property name="font" >
+     <font>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text" >
+     <string>Bypass all the above filters</string>
+    </property>
+    <property name="checked" >
+     <bool>false</bool>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>buttonBox</sender>
+   <signal>rejected()</signal>
+   <receiver>mdlgSequestPara</receiver>
+   <slot>reject()</slot>
+   <hints>
+    <hint type="sourcelabel" >
+     <x>316</x>
+     <y>260</y>
+    </hint>
+    <hint type="destinationlabel" >
+     <x>286</x>
+     <y>274</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

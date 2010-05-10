@@ -1,0 +1,1384 @@
+<ui version="4.0" >
+ <class>mdlgEMparameters</class>
+ <widget class="QDialog" name="mdlgEMparameters" >
+  <property name="geometry" >
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>480</width>
+    <height>431</height>
+   </rect>
+  </property>
+  <property name="windowTitle" >
+   <string>Initial Parameters for EM</string>
+  </property>
+  <widget class="QDialogButtonBox" name="buttonBox" >
+   <property name="geometry" >
+    <rect>
+     <x>110</x>
+     <y>390</y>
+     <width>341</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="orientation" >
+    <enum>Qt::Horizontal</enum>
+   </property>
+   <property name="standardButtons" >
+    <set>QDialogButtonBox::Cancel|QDialogButtonBox::Ok</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label" >
+   <property name="geometry" >
+    <rect>
+     <x>21</x>
+     <y>20</y>
+     <width>341</width>
+     <height>18</height>
+    </rect>
+   </property>
+   <property name="font" >
+    <font>
+     <pointsize>10</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="text" >
+    <string>Initial Values for the Model Estimation via EM:</string>
+   </property>
+  </widget>
+  <widget class="Line" name="line" >
+   <property name="geometry" >
+    <rect>
+     <x>20</x>
+     <y>40</y>
+     <width>441</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="orientation" >
+    <enum>Qt::Horizontal</enum>
+   </property>
+  </widget>
+  <widget class="Line" name="line_2" >
+   <property name="geometry" >
+    <rect>
+     <x>20</x>
+     <y>370</y>
+     <width>441</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="orientation" >
+    <enum>Qt::Horizontal</enum>
+   </property>
+  </widget>
+  <widget class="QStackedWidget" name="mstkWidgEM" >
+   <property name="geometry" >
+    <rect>
+     <x>10</x>
+     <y>90</y>
+     <width>451</width>
+     <height>281</height>
+    </rect>
+   </property>
+   <property name="frameShape" >
+    <enum>QFrame::NoFrame</enum>
+   </property>
+   <property name="currentIndex" >
+    <number>1</number>
+   </property>
+   <widget class="QWidget" name="page1D" >
+    <widget class="QGroupBox" name="groupBox_2" >
+     <property name="geometry" >
+      <rect>
+       <x>10</x>
+       <y>40</y>
+       <width>191</width>
+       <height>191</height>
+      </rect>
+     </property>
+     <property name="title" >
+      <string>False Hits</string>
+     </property>
+     <widget class="QLabel" name="label_27" >
+      <property name="geometry" >
+       <rect>
+        <x>30</x>
+        <y>30</y>
+        <width>41</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="font" >
+       <font>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="text" >
+       <string>μ (X) :</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="mLineEd1DmuF" >
+      <property name="geometry" >
+       <rect>
+        <x>80</x>
+        <y>30</y>
+        <width>81</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text" >
+       <string>0.2</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="mLineEd1DsigF" >
+      <property name="geometry" >
+       <rect>
+        <x>80</x>
+        <y>90</y>
+        <width>81</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text" >
+       <string>0.71</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_28" >
+      <property name="geometry" >
+       <rect>
+        <x>30</x>
+        <y>90</y>
+        <width>41</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="font" >
+       <font>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="text" >
+       <string>σ (X) :</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="mLineEd1DpF" >
+      <property name="geometry" >
+       <rect>
+        <x>80</x>
+        <y>150</y>
+        <width>81</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text" >
+       <string>0.6</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_32" >
+      <property name="geometry" >
+       <rect>
+        <x>10</x>
+        <y>150</y>
+        <width>72</width>
+        <height>18</height>
+       </rect>
+      </property>
+      <property name="font" >
+       <font>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="text" >
+       <string>p1 (False):</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QLabel" name="label_26" >
+     <property name="geometry" >
+      <rect>
+       <x>230</x>
+       <y>250</y>
+       <width>141</width>
+       <height>18</height>
+      </rect>
+     </property>
+     <property name="font" >
+      <font>
+       <pointsize>10</pointsize>
+      </font>
+     </property>
+     <property name="text" >
+      <string>Tolarence for Likelihood:</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_24" >
+     <property name="geometry" >
+      <rect>
+       <x>20</x>
+       <y>250</y>
+       <width>91</width>
+       <height>18</height>
+      </rect>
+     </property>
+     <property name="font" >
+      <font>
+       <pointsize>10</pointsize>
+      </font>
+     </property>
+     <property name="text" >
+      <string>Max. Iterations:</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="mLineEd1DTol" >
+     <property name="geometry" >
+      <rect>
+       <x>380</x>
+       <y>250</y>
+       <width>48</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="text" >
+      <string>0.1</string>
+     </property>
+    </widget>
+    <widget class="QGroupBox" name="groupBox_4" >
+     <property name="geometry" >
+      <rect>
+       <x>250</x>
+       <y>40</y>
+       <width>181</width>
+       <height>191</height>
+      </rect>
+     </property>
+     <property name="title" >
+      <string>True Hits</string>
+     </property>
+     <widget class="QLabel" name="label_20" >
+      <property name="geometry" >
+       <rect>
+        <x>20</x>
+        <y>30</y>
+        <width>41</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="font" >
+       <font>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="text" >
+       <string>μ (X) :</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="mLineEd1DmuT" >
+      <property name="geometry" >
+       <rect>
+        <x>70</x>
+        <y>30</y>
+        <width>81</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text" >
+       <string>0.7</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_21" >
+      <property name="geometry" >
+       <rect>
+        <x>20</x>
+        <y>90</y>
+        <width>41</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="font" >
+       <font>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="layoutDirection" >
+       <enum>Qt::LeftToRight</enum>
+      </property>
+      <property name="text" >
+       <string>σ (X) :</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="mLineEd1DsigT" >
+      <property name="geometry" >
+       <rect>
+        <x>70</x>
+        <y>90</y>
+        <width>81</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text" >
+       <string>0.45</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_23" >
+      <property name="geometry" >
+       <rect>
+        <x>30</x>
+        <y>150</y>
+        <width>111</width>
+        <height>18</height>
+       </rect>
+      </property>
+      <property name="font" >
+       <font>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="text" >
+       <string>p2 (True) = 1 - p1</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QLineEdit" name="mLineEd1DMaxIter" >
+     <property name="geometry" >
+      <rect>
+       <x>120</x>
+       <y>250</y>
+       <width>61</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="text" >
+      <string>20</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_25" >
+     <property name="geometry" >
+      <rect>
+       <x>430</x>
+       <y>250</y>
+       <width>21</width>
+       <height>18</height>
+      </rect>
+     </property>
+     <property name="font" >
+      <font>
+       <pointsize>10</pointsize>
+      </font>
+     </property>
+     <property name="text" >
+      <string>%</string>
+     </property>
+    </widget>
+    <widget class="QComboBox" name="mcmbBox1DX" >
+     <property name="geometry" >
+      <rect>
+       <x>80</x>
+       <y>10</y>
+       <width>101</width>
+       <height>22</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_22" >
+     <property name="geometry" >
+      <rect>
+       <x>20</x>
+       <y>10</y>
+       <width>61</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="font" >
+      <font>
+       <pointsize>10</pointsize>
+      </font>
+     </property>
+     <property name="text" >
+      <string>Select X :</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="page2D" >
+    <widget class="QLabel" name="label_15" >
+     <property name="geometry" >
+      <rect>
+       <x>430</x>
+       <y>250</y>
+       <width>21</width>
+       <height>18</height>
+      </rect>
+     </property>
+     <property name="font" >
+      <font>
+       <pointsize>10</pointsize>
+      </font>
+     </property>
+     <property name="text" >
+      <string>%</string>
+     </property>
+    </widget>
+    <widget class="QGroupBox" name="groupBox_3" >
+     <property name="geometry" >
+      <rect>
+       <x>250</x>
+       <y>40</y>
+       <width>181</width>
+       <height>201</height>
+      </rect>
+     </property>
+     <property name="title" >
+      <string>True Hits</string>
+     </property>
+     <widget class="QLineEdit" name="mLineEd2DmuYT" >
+      <property name="geometry" >
+       <rect>
+        <x>80</x>
+        <y>50</y>
+        <width>81</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text" >
+       <string>0.6</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="mLineEd2DsigYT" >
+      <property name="geometry" >
+       <rect>
+        <x>80</x>
+        <y>110</y>
+        <width>81</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text" >
+       <string>0.55</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_9" >
+      <property name="geometry" >
+       <rect>
+        <x>10</x>
+        <y>50</y>
+        <width>91</width>
+        <height>18</height>
+       </rect>
+      </property>
+      <property name="font" >
+       <font>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="text" >
+       <string>μ (Y):</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_10" >
+      <property name="geometry" >
+       <rect>
+        <x>10</x>
+        <y>110</y>
+        <width>80</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="font" >
+       <font>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="layoutDirection" >
+       <enum>Qt::LeftToRight</enum>
+      </property>
+      <property name="text" >
+       <string>σ (Y):</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_4" >
+      <property name="geometry" >
+       <rect>
+        <x>10</x>
+        <y>20</y>
+        <width>91</width>
+        <height>18</height>
+       </rect>
+      </property>
+      <property name="font" >
+       <font>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="text" >
+       <string>μ (X):</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="mLineEd2DmuXT" >
+      <property name="geometry" >
+       <rect>
+        <x>80</x>
+        <y>20</y>
+        <width>81</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text" >
+       <string>0.7</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_6" >
+      <property name="geometry" >
+       <rect>
+        <x>10</x>
+        <y>80</y>
+        <width>80</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="font" >
+       <font>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="layoutDirection" >
+       <enum>Qt::LeftToRight</enum>
+      </property>
+      <property name="text" >
+       <string>σ (X):</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="mLineEd2DsigXT" >
+      <property name="geometry" >
+       <rect>
+        <x>80</x>
+        <y>80</y>
+        <width>81</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text" >
+       <string>0.45</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_13" >
+      <property name="geometry" >
+       <rect>
+        <x>10</x>
+        <y>140</y>
+        <width>41</width>
+        <height>18</height>
+       </rect>
+      </property>
+      <property name="font" >
+       <font>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="text" >
+       <string>ρ:</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="mLineEd2DRhoT" >
+      <property name="geometry" >
+       <rect>
+        <x>80</x>
+        <y>140</y>
+        <width>81</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text" >
+       <string>0.33</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_17" >
+      <property name="geometry" >
+       <rect>
+        <x>10</x>
+        <y>170</y>
+        <width>111</width>
+        <height>18</height>
+       </rect>
+      </property>
+      <property name="font" >
+       <font>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="text" >
+       <string>p2 (True) = 1 - p1</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QLineEdit" name="mLineEd2DMaxIter" >
+     <property name="geometry" >
+      <rect>
+       <x>120</x>
+       <y>250</y>
+       <width>61</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="text" >
+      <string>20</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="mLineEd2DTol" >
+     <property name="geometry" >
+      <rect>
+       <x>380</x>
+       <y>250</y>
+       <width>48</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="text" >
+      <string>0.1</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_7" >
+     <property name="geometry" >
+      <rect>
+       <x>20</x>
+       <y>250</y>
+       <width>91</width>
+       <height>18</height>
+      </rect>
+     </property>
+     <property name="font" >
+      <font>
+       <pointsize>10</pointsize>
+      </font>
+     </property>
+     <property name="text" >
+      <string>Max. Iterations:</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_14" >
+     <property name="geometry" >
+      <rect>
+       <x>230</x>
+       <y>250</y>
+       <width>141</width>
+       <height>18</height>
+      </rect>
+     </property>
+     <property name="font" >
+      <font>
+       <pointsize>10</pointsize>
+      </font>
+     </property>
+     <property name="text" >
+      <string>Tolarence for Likelihood:</string>
+     </property>
+    </widget>
+    <widget class="QGroupBox" name="groupBox" >
+     <property name="geometry" >
+      <rect>
+       <x>10</x>
+       <y>40</y>
+       <width>191</width>
+       <height>201</height>
+      </rect>
+     </property>
+     <property name="title" >
+      <string>False Hits</string>
+     </property>
+     <widget class="QLabel" name="label_3" >
+      <property name="geometry" >
+       <rect>
+        <x>10</x>
+        <y>20</y>
+        <width>91</width>
+        <height>18</height>
+       </rect>
+      </property>
+      <property name="font" >
+       <font>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="text" >
+       <string>μ (X):</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="mLineEd2DmuXF" >
+      <property name="geometry" >
+       <rect>
+        <x>90</x>
+        <y>20</y>
+        <width>81</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text" >
+       <string>0.2</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="mLineEd2DsigXF" >
+      <property name="geometry" >
+       <rect>
+        <x>90</x>
+        <y>80</y>
+        <width>81</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text" >
+       <string>0.71</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_5" >
+      <property name="geometry" >
+       <rect>
+        <x>10</x>
+        <y>80</y>
+        <width>91</width>
+        <height>18</height>
+       </rect>
+      </property>
+      <property name="font" >
+       <font>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="text" >
+       <string>σ (X):</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_12" >
+      <property name="geometry" >
+       <rect>
+        <x>10</x>
+        <y>50</y>
+        <width>91</width>
+        <height>18</height>
+       </rect>
+      </property>
+      <property name="font" >
+       <font>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="text" >
+       <string>μ (Y):</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="mLineEd2DmuYF" >
+      <property name="geometry" >
+       <rect>
+        <x>90</x>
+        <y>50</y>
+        <width>81</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text" >
+       <string>0.2</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_11" >
+      <property name="geometry" >
+       <rect>
+        <x>10</x>
+        <y>110</y>
+        <width>91</width>
+        <height>18</height>
+       </rect>
+      </property>
+      <property name="font" >
+       <font>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="text" >
+       <string>σ (Y):</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="mLineEd2DsigYF" >
+      <property name="geometry" >
+       <rect>
+        <x>90</x>
+        <y>110</y>
+        <width>81</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text" >
+       <string>0.32</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="mLineEd2DRhoF" >
+      <property name="geometry" >
+       <rect>
+        <x>90</x>
+        <y>140</y>
+        <width>81</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text" >
+       <string>0.2</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_8" >
+      <property name="geometry" >
+       <rect>
+        <x>10</x>
+        <y>140</y>
+        <width>51</width>
+        <height>18</height>
+       </rect>
+      </property>
+      <property name="font" >
+       <font>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="text" >
+       <string>ρ:</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="mLineEd2DpF" >
+      <property name="geometry" >
+       <rect>
+        <x>90</x>
+        <y>170</y>
+        <width>81</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text" >
+       <string>0.6</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_16" >
+      <property name="geometry" >
+       <rect>
+        <x>10</x>
+        <y>170</y>
+        <width>72</width>
+        <height>18</height>
+       </rect>
+      </property>
+      <property name="font" >
+       <font>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="text" >
+       <string>p1 (False):</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QComboBox" name="mcmbBox2DX" >
+     <property name="geometry" >
+      <rect>
+       <x>90</x>
+       <y>10</y>
+       <width>91</width>
+       <height>22</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_29" >
+     <property name="geometry" >
+      <rect>
+       <x>20</x>
+       <y>10</y>
+       <width>61</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="font" >
+      <font>
+       <pointsize>10</pointsize>
+      </font>
+     </property>
+     <property name="text" >
+      <string>Select X :</string>
+     </property>
+    </widget>
+    <widget class="QComboBox" name="mcmbBox2DY" >
+     <property name="geometry" >
+      <rect>
+       <x>320</x>
+       <y>10</y>
+       <width>91</width>
+       <height>22</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_30" >
+     <property name="geometry" >
+      <rect>
+       <x>260</x>
+       <y>10</y>
+       <width>61</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="font" >
+      <font>
+       <pointsize>10</pointsize>
+      </font>
+     </property>
+     <property name="text" >
+      <string>Select Y :</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="page3D" >
+    <widget class="QGroupBox" name="groupBox_6" >
+     <property name="geometry" >
+      <rect>
+       <x>10</x>
+       <y>40</y>
+       <width>191</width>
+       <height>181</height>
+      </rect>
+     </property>
+     <property name="title" >
+      <string>False Hits</string>
+     </property>
+     <widget class="QLabel" name="label_42" >
+      <property name="geometry" >
+       <rect>
+        <x>40</x>
+        <y>20</y>
+        <width>41</width>
+        <height>18</height>
+       </rect>
+      </property>
+      <property name="font" >
+       <font>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="text" >
+       <string>μ (X):</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="mLineEd3DmuXF" >
+      <property name="geometry" >
+       <rect>
+        <x>90</x>
+        <y>20</y>
+        <width>81</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text" >
+       <string>0.2</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="mLineEd3DmuZF" >
+      <property name="geometry" >
+       <rect>
+        <x>90</x>
+        <y>100</y>
+        <width>81</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text" >
+       <string>0.71</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_43" >
+      <property name="geometry" >
+       <rect>
+        <x>40</x>
+        <y>100</y>
+        <width>41</width>
+        <height>18</height>
+       </rect>
+      </property>
+      <property name="font" >
+       <font>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="text" >
+       <string>μ (Z):</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_44" >
+      <property name="geometry" >
+       <rect>
+        <x>40</x>
+        <y>60</y>
+        <width>41</width>
+        <height>18</height>
+       </rect>
+      </property>
+      <property name="font" >
+       <font>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="text" >
+       <string>μ (Y):</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="mLineEd3DmuYF" >
+      <property name="geometry" >
+       <rect>
+        <x>90</x>
+        <y>60</y>
+        <width>81</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text" >
+       <string>0.2</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="mLineEd3DpF" >
+      <property name="geometry" >
+       <rect>
+        <x>90</x>
+        <y>140</y>
+        <width>81</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text" >
+       <string>0.6</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_47" >
+      <property name="geometry" >
+       <rect>
+        <x>10</x>
+        <y>140</y>
+        <width>72</width>
+        <height>18</height>
+       </rect>
+      </property>
+      <property name="font" >
+       <font>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="text" >
+       <string>p1 (False):</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QLineEdit" name="mLineEd3DTol" >
+     <property name="geometry" >
+      <rect>
+       <x>380</x>
+       <y>250</y>
+       <width>48</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="text" >
+      <string>0.1</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_40" >
+     <property name="geometry" >
+      <rect>
+       <x>430</x>
+       <y>250</y>
+       <width>21</width>
+       <height>18</height>
+      </rect>
+     </property>
+     <property name="font" >
+      <font>
+       <pointsize>10</pointsize>
+      </font>
+     </property>
+     <property name="text" >
+      <string>%</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_39" >
+     <property name="geometry" >
+      <rect>
+       <x>20</x>
+       <y>250</y>
+       <width>91</width>
+       <height>18</height>
+      </rect>
+     </property>
+     <property name="font" >
+      <font>
+       <pointsize>10</pointsize>
+      </font>
+     </property>
+     <property name="text" >
+      <string>Max. Iterations:</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="mLineEd3DMaxIter" >
+     <property name="geometry" >
+      <rect>
+       <x>120</x>
+       <y>250</y>
+       <width>61</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="text" >
+      <string>20</string>
+     </property>
+    </widget>
+    <widget class="QGroupBox" name="groupBox_5" >
+     <property name="geometry" >
+      <rect>
+       <x>250</x>
+       <y>40</y>
+       <width>181</width>
+       <height>181</height>
+      </rect>
+     </property>
+     <property name="title" >
+      <string>True Hits</string>
+     </property>
+     <widget class="QLineEdit" name="mLineEd3DmuYT" >
+      <property name="geometry" >
+       <rect>
+        <x>80</x>
+        <y>60</y>
+        <width>81</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text" >
+       <string>0.6</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_33" >
+      <property name="geometry" >
+       <rect>
+        <x>30</x>
+        <y>60</y>
+        <width>41</width>
+        <height>18</height>
+       </rect>
+      </property>
+      <property name="font" >
+       <font>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="text" >
+       <string>μ (Y):</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_35" >
+      <property name="geometry" >
+       <rect>
+        <x>30</x>
+        <y>20</y>
+        <width>41</width>
+        <height>18</height>
+       </rect>
+      </property>
+      <property name="font" >
+       <font>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="text" >
+       <string>μ (X):</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="mLineEd3DmuXT" >
+      <property name="geometry" >
+       <rect>
+        <x>80</x>
+        <y>20</y>
+        <width>81</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text" >
+       <string>0.7</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_36" >
+      <property name="geometry" >
+       <rect>
+        <x>30</x>
+        <y>100</y>
+        <width>41</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="font" >
+       <font>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="layoutDirection" >
+       <enum>Qt::LeftToRight</enum>
+      </property>
+      <property name="text" >
+       <string>μ (Z):</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="mLineEd3DmuZT" >
+      <property name="geometry" >
+       <rect>
+        <x>80</x>
+        <y>100</y>
+        <width>81</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text" >
+       <string>0.45</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_38" >
+      <property name="geometry" >
+       <rect>
+        <x>30</x>
+        <y>140</y>
+        <width>111</width>
+        <height>18</height>
+       </rect>
+      </property>
+      <property name="font" >
+       <font>
+        <pointsize>10</pointsize>
+       </font>
+      </property>
+      <property name="text" >
+       <string>p2 (True) = 1 - p1</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QLabel" name="label_41" >
+     <property name="geometry" >
+      <rect>
+       <x>230</x>
+       <y>250</y>
+       <width>141</width>
+       <height>18</height>
+      </rect>
+     </property>
+     <property name="font" >
+      <font>
+       <pointsize>10</pointsize>
+      </font>
+     </property>
+     <property name="text" >
+      <string>Tolarence for Likelihood:</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_18" >
+     <property name="geometry" >
+      <rect>
+       <x>10</x>
+       <y>10</y>
+       <width>291</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="frameShape" >
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="frameShadow" >
+      <enum>QFrame::Sunken</enum>
+     </property>
+     <property name="text" >
+      <string>Initial ∑, 3X3 matrix will be guessed for the fitting process.</string>
+     </property>
+     <property name="wordWrap" >
+      <bool>true</bool>
+     </property>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QComboBox" name="mcmbBoxDim" >
+   <property name="geometry" >
+    <rect>
+     <x>150</x>
+     <y>60</y>
+     <width>91</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="currentIndex" >
+    <number>1</number>
+   </property>
+   <item>
+    <property name="text" >
+     <string>1 D</string>
+    </property>
+   </item>
+   <item>
+    <property name="text" >
+     <string>2 D</string>
+    </property>
+   </item>
+   <item>
+    <property name="text" >
+     <string>3 D</string>
+    </property>
+   </item>
+  </widget>
+  <widget class="QLabel" name="label_19" >
+   <property name="geometry" >
+    <rect>
+     <x>30</x>
+     <y>60</y>
+     <width>111</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="font" >
+    <font>
+     <pointsize>10</pointsize>
+    </font>
+   </property>
+   <property name="text" >
+    <string>Model Dimension : </string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>buttonBox</sender>
+   <signal>rejected()</signal>
+   <receiver>mdlgEMparameters</receiver>
+   <slot>reject()</slot>
+   <hints>
+    <hint type="sourcelabel" >
+     <x>306</x>
+     <y>360</y>
+    </hint>
+    <hint type="destinationlabel" >
+     <x>286</x>
+     <y>274</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>mcmbBoxDim</sender>
+   <signal>activated(int)</signal>
+   <receiver>mstkWidgEM</receiver>
+   <slot>setCurrentIndex(int)</slot>
+   <hints>
+    <hint type="sourcelabel" >
+     <x>233</x>
+     <y>68</y>
+    </hint>
+    <hint type="destinationlabel" >
+     <x>450</x>
+     <y>90</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

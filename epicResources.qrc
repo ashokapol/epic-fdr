@@ -1,0 +1,18 @@
+<!DOCTYPE RCC>
+<RCC version="1.0">
+<qresource>
+        <file alias="epic.png">graphics/epic.png</file>
+        <file alias="FileOpen.png">graphics/FileOpen.png</file>
+        <file alias="logo.png">graphics/logo.png</file>
+        <file alias="logo2.png">graphics/logo2.png</file>
+	<file alias="FormulaEvaluatorHS.png">graphics/FormulaEvaluatorHS.png</file>
+	<file alias="FileSave.png">graphics/FileSave.png</file>
+	<file alias="normalization.png">graphics/normalization.png</file>
+	<file alias="selVars.png">graphics/selVars.png</file>
+	<file alias="selXT.png">graphics/selXT.png</file>
+	<file alias="selSEQ.png">graphics/selSEQ.png</file>
+	<file alias="selSM.png">graphics/selSM.png</file>
+	<file alias="model.png">graphics/model.png</file>
+	<file alias="Exit.png">graphics/Exit.png</file>
+</qresource>
+</RCC>
